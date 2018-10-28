@@ -21,6 +21,14 @@
         </activity>
         <activity android:name=".AfterSplash"
                   android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SignUp"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".IndexActivity"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".PayActivity"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".PrePayActivity"
+                  android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

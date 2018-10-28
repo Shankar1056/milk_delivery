@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        <android.support.constraint.ConstraintLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/newuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New User"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/typoupright_bt"/>
+            <TextView
+                    android:id="@+id/datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:text="10:10am/pm, 12 may 2018,30C"
+                    android:fontFamily="@font/ariali"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/newuser"
+                    android:layout_marginRight="10dp"/>
+
+            <TextView
+                    android:id="@+id/appname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shree Agro Diary Farm"
+                    android:fontFamily="@font/optionyx"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintTop_toTopOf="@+id/newuser"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="70dp"
+                    android:textSize="30sp"
+                    android:textAllCaps="true"/>
+            <View
+                    android:id="@+id/view"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorWhite"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/appname"/>
+            <TextView
+                    android:id="@+id/energysle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Energy For Sale"
+                    android:fontFamily="@font/typoupright_bt"
+                    app:layout_constraintTop_toBottomOf="@+id/view"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+            <LinearLayout
+                    android:id="@+id/nameLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedcorner_text"
+                    app:layout_constraintTop_toBottomOf="@+id/energysle">
+
+
+                <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Name: "
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_vertical"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/typoupright_bt"
+                />
+                <EditText
+                        android:id="@+id/nameET"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/typoupright_bt"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/emailL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedcorner_text"
+                    app:layout_constraintTop_toBottomOf="@+id/nameLL">
+
+
+                <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Email: "
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_vertical"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/typoupright_bt"
+                />
+                <EditText
+                        android:id="@+id/emailET"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/typoupright_bt"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/moilelL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedcorner_text"
+                    app:layout_constraintTop_toBottomOf="@+id/emailL">
+
+
+                <TextView
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Phone: "
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_vertical"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/typoupright_bt"
+                />
+                <EditText
+                        android:id="@+id/mobileET"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/typoupright_bt"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/addresslL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedcorner_text"
+                    app:layout_constraintTop_toBottomOf="@+id/moilelL">
+
+
+                <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="I Stay at(address): "
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_vertical"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/typoupright_bt"
+                />
+                <EditText
+                        android:id="@+id/addressET"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/typoupright_bt"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/dobLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedcorner_text"
+                    app:layout_constraintTop_toBottomOf="@+id/addresslL">
+
+
+                <TextView
+                        android:id="@+id/dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Date Of Birth: "
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_vertical"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/typoupright_bt"
+                />
+                <EditText
+                        android:id="@+id/dobSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/typoupright_bt"
+                        android:singleLine="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:imeOptions="actionNext"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/milkLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedcorner_text"
+                    app:layout_constraintTop_toBottomOf="@+id/dobLL">
+
+
+                <TextView
+                        android:id="@+id/milk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Choose my kind of milk: "
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_vertical"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/typoupright_bt"
+                />
+                <Spinner
+                        android:id="@+id/milkSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/typoupright_bt"
+                        android:singleLine="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:imeOptions="actionNext"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/quantityLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedcorner_text"
+                    app:layout_constraintTop_toBottomOf="@+id/dobLL">
+
+
+                <TextView
+                        android:id="@+id/quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Choose my kind of milk: "
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_vertical"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/typoupright_bt"
+                />
+                <EditText
+                        android:id="@+id/quantityET"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/typoupright_bt"
+                        android:singleLine="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:imeOptions="actionNext"/>
+            </LinearLayout>
+            <CheckBox
+                    android:id="@+id/fiveml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500 ml every day"
+                    android:fontFamily="@font/typoupright_bt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"
+                    android:buttonTint="@color/colorWhite"
+                    app:layout_constraintTop_toBottomOf="@+id/quantityLL"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginLeft="25dp"/>
+
+            <CheckBox
+                    android:id="@+id/oneLtrCB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OneLitre every day"
+                    android:fontFamily="@font/typoupright_bt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"
+                    android:buttonTint="@color/colorWhite"
+                    app:layout_constraintTop_toBottomOf="@+id/fiveml"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginLeft="25dp"/>
+
+            <CheckBox
+                    android:id="@+id/oneHalfLtrCB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="One &amp; Half Litre every day"
+                    android:fontFamily="@font/typoupright_bt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"
+                    android:buttonTint="@color/colorWhite"
+                    app:layout_constraintTop_toBottomOf="@+id/oneLtrCB"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginLeft="25dp"/>
+
+            <CheckBox
+                    android:id="@+id/moremilkCB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="One &amp; Half Litre every day"
+                    android:fontFamily="@font/typoupright_bt"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"
+                    android:buttonTint="@color/colorWhite"
+                    app:layout_constraintTop_toBottomOf="@+id/oneHalfLtrCB"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginLeft="25dp"/>
+
+            <TextView
+                    android:id="@+id/freedelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/moremilkCB"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Free Home elivery For One Whom We Serve with Love"
+                    android:fontFamily="@font/typoupright_bt"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

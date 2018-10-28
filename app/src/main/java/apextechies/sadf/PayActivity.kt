@@ -3,16 +3,16 @@ package apextechies.sadf
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_signup.*
+import kotlinx.android.synthetic.main.activity_pay.*
 
-class AfterSplash : AppCompatActivity() {
+class PayActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_aftersplash)
+        setContentView(R.layout.activity_pay)
 
-        newuser.setOnClickListener {
-            startActivity(Intent(this, SignUp::class.java))
+        preapaidTV.setOnClickListener {
+            startActivity(Intent(this, PrePayActivity::class.java))
         }
     }
 }
