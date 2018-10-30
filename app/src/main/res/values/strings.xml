@@ -7,4 +7,6 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="home">Home</string>
+    <string name="action_energy_for_life">Energy For Life</string>
+    <string name="about_us">About Us</string>
 </resources>

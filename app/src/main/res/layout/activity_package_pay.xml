@@ -9,7 +9,7 @@
             android:id="@+id/pay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pay"
+            android:text="Package Pay"
             android:fontFamily="@font/typoupright_bt"
             android:textSize="35sp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -77,24 +77,12 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginTop="15dp"
-            android:text="PrePay Bill"
+            android:text="Generate Bill"
             android:gravity="center"
             android:textSize="30sp"
             android:fontFamily="@font/typoupright_bt"
             android:background="@drawable/roundedcorner_text"/>
-    <TextView
-            android:id="@+id/postpaidTV"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            app:layout_constraintTop_toBottomOf="@+id/preapaidTV"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="15dp"
-            android:text="PostPay Bill"
-            android:gravity="center"
-            android:textSize="30sp"
-            android:fontFamily="@font/typoupright_bt"
-            android:background="@drawable/roundedcorner_text"/>
+
 
     <TextView
             android:id="@+id/freedelivery"
@@ -109,7 +97,7 @@
             android:paddingLeft="10dp"
             android:text="Free Home elivery For One Whom We Serve with Love"
             android:fontFamily="@font/typoupright_bt"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>

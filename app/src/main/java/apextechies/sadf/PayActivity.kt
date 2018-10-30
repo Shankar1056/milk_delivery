@@ -14,5 +14,8 @@ class PayActivity: AppCompatActivity() {
         preapaidTV.setOnClickListener {
             startActivity(Intent(this, PrePayActivity::class.java))
         }
+        postpaidTV.setOnClickListener {
+            startActivity(Intent(this, PackagePayActivity::class.java))
+        }
     }
 }

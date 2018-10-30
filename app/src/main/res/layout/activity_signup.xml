@@ -37,6 +37,15 @@
                     app:layout_constraintTop_toTopOf="@+id/newuser"
                     android:layout_marginRight="10dp"/>
 
+            <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/logo_icon"
+                    app:layout_constraintTop_toBottomOf="@+id/newuser"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
             <TextView
                     android:id="@+id/appname"
                     android:layout_width="wrap_content"
@@ -44,10 +53,9 @@
                     android:text="Shree Agro Diary Farm"
                     android:fontFamily="@font/optionyx"
                     android:textColor="@color/colorWhite"
-                    app:layout_constraintTop_toTopOf="@+id/newuser"
+                    app:layout_constraintTop_toBottomOf="@+id/logo"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    android:layout_marginTop="70dp"
                     android:textSize="30sp"
                     android:textAllCaps="true"/>
             <View
@@ -62,7 +70,7 @@
                     android:id="@+id/energysle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Energy For Sale"
+                    android:text="@string/action_energy_for_life"
                     android:fontFamily="@font/typoupright_bt"
                     app:layout_constraintTop_toBottomOf="@+id/view"
                     android:textSize="25sp"

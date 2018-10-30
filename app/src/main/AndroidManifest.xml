@@ -29,6 +29,10 @@
                   android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".PrePayActivity"
                   android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ContactUs"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".PackagePayActivity"
+                  android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

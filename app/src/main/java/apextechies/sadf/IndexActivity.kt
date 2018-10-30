@@ -14,5 +14,8 @@ class IndexActivity: AppCompatActivity() {
         payTV.setOnClickListener {
             startActivity(Intent(this, PayActivity::class.java))
         }
+        contactUsTV.setOnClickListener {
+            startActivity(Intent(this, ContactUs::class.java))
+        }
     }
 }

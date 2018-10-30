@@ -20,7 +20,7 @@
                     android:id="@+id/prepay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="PrePay"
+                    android:text="Contact Us"
                     android:fontFamily="@font/typoupright_bt"
                     android:textSize="35sp"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -81,24 +81,24 @@
                     app:layout_constraintRight_toRightOf="parent"/>
 
             <TextView
-                    android:id="@+id/subscribepresentTV"
+                    android:id="@+id/aboutUsTV"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     app:layout_constraintTop_toBottomOf="@+id/energysle"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_marginTop="15dp"
-                    android:text="Subscribe present month"
+                    android:text="@string/about_us"
                     android:gravity="center"
                     android:textSize="30sp"
                     android:fontFamily="@font/typoupright_bt"
                     android:background="@drawable/roundedcorner_text"/>
             <TextView
-                    android:id="@+id/subscribefifteendaysTV"
+                    android:id="@+id/reachUsTV"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    app:layout_constraintTop_toBottomOf="@+id/subscribepresentTV"
-                    android:text="Subscribe for 15 days"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutUsTV"
+                    android:text="Reach Us"
                     android:gravity="center"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
@@ -107,41 +107,63 @@
                     android:fontFamily="@font/typoupright_bt"
                     android:background="@drawable/roundedcorner_text"/>
             <TextView
-                    android:id="@+id/subscribetendaysTV"
+                    android:id="@+id/feedbackTV"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    app:layout_constraintTop_toBottomOf="@+id/subscribefifteendaysTV"
+                    app:layout_constraintTop_toBottomOf="@+id/reachUsTV"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_marginTop="15dp"
-                    android:text="Subscribe for 10 days"
+                    android:text="Give Feedback"
                     android:gravity="center"
                     android:textSize="30sp"
                     android:fontFamily="@font/typoupright_bt"
                     android:background="@drawable/roundedcorner_text"/>
 
-            <TextView
-                    android:id="@+id/subscribethreedaysTV"
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/likerateLL"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    app:layout_constraintTop_toBottomOf="@+id/subscribetendaysTV"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/feedbackTV"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_marginTop="15dp"
-                    android:text="Subscribe for 3 days"
                     android:gravity="center"
-                    android:textSize="30sp"
-                    android:fontFamily="@font/typoupright_bt"
-                    android:background="@drawable/roundedcorner_text"/>
+                    android:background="@drawable/roundedcorner_text">
+
+
+                <TextView
+                        android:id="@+id/likeRateTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="Like Us/Rate US"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:fontFamily="@font/typoupright_bt"
+                        android:layout_marginLeft="10dp"
+                app:layout_constraintRight_toLeftOf="@+id/rateing"/>
+                <RatingBar
+                        android:id="@+id/rateing"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:scaleX=".5"
+                        android:scaleY=".5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/likeRateTV"
+                        app:layout_constraintBottom_toBottomOf="@id/likeRateTV"
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"/>
+            </android.support.constraint.ConstraintLayout>
             <TextView
-                    android:id="@+id/subscribeonedaysTV"
+                    android:id="@+id/referfriendTV"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    app:layout_constraintTop_toBottomOf="@+id/subscribethreedaysTV"
+                    app:layout_constraintTop_toBottomOf="@+id/likerateLL"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_marginTop="15dp"
-                    android:text="Subscribe for 3 days"
+                    android:text="Refer a Friend"
                     android:gravity="center"
                     android:textSize="30sp"
                     android:fontFamily="@font/typoupright_bt"
@@ -150,7 +172,7 @@
                     android:id="@+id/freedelivery"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/subscribeonedaysTV"
+                    app:layout_constraintTop_toBottomOf="@+id/referfriendTV"
                     android:layout_marginBottom="15dp"
                     android:textSize="25sp"
                     android:textColor="@color/colorWhite"
